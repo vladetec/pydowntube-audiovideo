@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Vídeo YouTube</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Conversor de Vídeo YouTube</h1>
+    <form action="/convert" method="post">
+        <label for="url">URL do YouTube:</label>
+        <input type="text" id="url" name="url" required>
+        <br>
+        <label for="format">Formato:</label>
+        <select id="format" name="format">
+            <option value="mp4">MP4</option>
+            <option value="mp3">MP3</option>
+        </select>
+        <br>
+        <button type="submit">Converter</button>
+    </form>
+    {% if file_name %}
+        <p>Arquivo convertido: <a href="{{ file_name }}" download>Baixar</a></p>
+    {% endif %}
+</br>
+<div>
+    <h2>Considerações:</h2>
+    <p>Lembre-se de que ganhar a vida como artista no nosso pais é muito difícil, 
+        especialmente para a maioria sem apoio corporativo.</p> 
+    <p> Lembre-se de apoiar os artistas regionais de cujo trabalho você gosta 
+         sempre que puder e lembre-se também de apoiar o software de código aberto.</p>
+</div>
+</body>
+</html>
