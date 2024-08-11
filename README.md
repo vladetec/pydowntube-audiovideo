@@ -11,4 +11,7 @@ source venv/bin/activate
 pip install -U pip setuptools wheel 
 pip install -r requirements.txt
 python run.py 
+
 ```
+### Exemplo Visual
+![pydowntube-audiovideo](media/pydowntube-audiovideo.png)
